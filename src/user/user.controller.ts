@@ -2,13 +2,13 @@ import { Controller, Get, Post } from '@nestjs/common';
 import { UserService } from './user.service';
 
 // 控制层
-@Controller()
+@Controller('user')
 export class UserController {
   // 注入服务
   constructor(private userService: UserService) {}
 
   // 查询用户列表
-  @Get('user')
+  @Get('getUser')
   getUser(): any {
     return this.userService.getUsers();
   }
