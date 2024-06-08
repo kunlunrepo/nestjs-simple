@@ -84,3 +84,27 @@ application module ->chat module
 4.nestjs自动创建依赖关系的实例
 
 5.按需进行调用
+
+# 接口服务
+
+请求数据校验 -> 请求认证 -> 路由 -> 功能逻辑 -> 数据库操作
+
+pipe -> guard -> controller -> service -> repository
+
+# 核心概念
+
+控制器(controllers)：处理请求
+
+服务(services)：数据访问与核心逻辑
+
+模块(modules)：组合所有的逻辑代码
+
+管道(pipes)：核验请求的数据
+
+过滤器(filters)：处理请求时的错误
+
+守卫(guards)：鉴权与认证相关
+
+拦截器(interceptors)：给请求与响应加入额外的逻辑
+
+存储库(repositories)：处理数据库中数据
