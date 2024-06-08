@@ -73,3 +73,14 @@ application module ->chat module
 >
 > **动态模块**    使用时才加载，懒加载模块
 
+# DI容器
+
+1.注册所有@Injectable()的类  (providers也会注册)
+
+2.通过Constructor了解类与类之前的依赖关系
+
+3.nestjs自动创建@Injectable()注解的类实例
+
+4.nestjs自动创建依赖关系的实例
+
+5.按需进行调用
